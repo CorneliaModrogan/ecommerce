@@ -10,7 +10,37 @@
       "ProjectGuid": "71107727-1007-42a3-afbb-ebf5aeda7154",
       "DisplayName": "ECommerce.Api.Customers",
       "ColorIndex": 1
+    },
+    "16b151eb-4316-42ea-ac70-9ed3a2c13fb3": {
+      "ProjectGuid": "16b151eb-4316-42ea-ac70-9ed3a2c13fb3",
+      "DisplayName": "ECommerce.Api.Customers",
+      "ColorIndex": 2
+    },
+    "c0f9847c-c960-430f-894a-ca525588130f": {
+      "ProjectGuid": "c0f9847c-c960-430f-894a-ca525588130f",
+      "DisplayName": "ECommerce.Api.Orders",
+      "ColorIndex": 3
+    },
+    "e45aacef-1fe2-4442-a464-9dca523351c0": {
+      "ProjectGuid": "e45aacef-1fe2-4442-a464-9dca523351c0",
+      "DisplayName": "ECommerce.Api.Search",
+      "ColorIndex": 4
+    },
+    "d54a8543-d331-4d68-a73a-51414772b033": {
+      "ProjectGuid": "d54a8543-d331-4d68-a73a-51414772b033",
+      "DisplayName": "ECommerce.Api.Products.Tests",
+      "ColorIndex": 5
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "5bcbaf54-8e06-480b-8bdd-8c10c6607444": {
+      "ProjectGuid": "5bcbaf54-8e06-480b-8bdd-8c10c6607444",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 7
 }

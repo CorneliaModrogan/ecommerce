@@ -1,0 +1,52 @@
+services:
+  ecommerce.api.customers:
+    build:
+      context: .
+      dockerfile: ECommerce.Api.Customers\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: ecommerceapicustomers
+    ports:
+    - mode: ingress
+      target: 80
+      published: 6002
+      protocol: tcp
+  ecommerce.api.orders:
+    build:
+      context: .
+      dockerfile: ECommerce.Api.Orders\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: ecommerceapiorders
+    ports:
+    - mode: ingress
+      target: 80
+      published: 6003
+      protocol: tcp
+  ecommerce.api.products:
+    build:
+      context: .
+      dockerfile: ECommerce.Api.Products\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: ecommerceapiproducts
+    ports:
+    - mode: ingress
+      target: 80
+      published: 6001
+      protocol: tcp
+  ecommerce.api.search:
+    build:
+      context: .
+      dockerfile: ECommerce.Api.Search\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      Services__Customers: http://ecommerce.api.customers
+      Services__Orders: http://ecommerce.api.orders
+      Services__Products: http://ecommerce.api.products
+    image: ecommerceapisearch
+    ports:
+    - mode: ingress
+      target: 80
+      published: 6004
+      protocol: tcp
